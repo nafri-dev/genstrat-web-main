@@ -8,6 +8,7 @@
   background: radial-gradient(circle, #FFC800,#c5e5a5);
   background-size: 200% 200%;
   position: relative;
+  border-radius: 0 0 30px 30px;
 }
 
 @keyframes gradientAnimation {
@@ -30,6 +31,7 @@
   align-items: center;
   flex-direction: column;
   width: 90%;
+  
 }
 
 .hero_img_container {
