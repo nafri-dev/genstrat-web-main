@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 100px;
+  gap: 60px;
   height: auto;
   padding: 50px 0px;
   background-color: #FFF;
@@ -19,7 +19,7 @@
 
 .home_technology_heading_container h2 {
   text-align: center;
-  font-size: 42px;
+  font-size: 48px;
   font-weight: 300;
   width: 100%;
 }
@@ -29,7 +29,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 50px;
 }
 
 .home_technology_card_container_one,
@@ -54,15 +54,15 @@
 }
 
 .home_technology_card_container_one {
-  background-color: #E8E9Eb;
+  background-color: whitesmoke;
 }
 
 .home_technology_card_container_two {
-  background-color: #E8E9Eb;
+  background-color: whitesmoke;
 }
 
 .home_technology_card_container_three {
-  background-color: #E8E9Eb;
+  background-color: whitesmoke;
 }
 
 .home_technology_card_container_one h2,

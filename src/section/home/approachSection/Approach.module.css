@@ -37,7 +37,7 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
-  gap: 50px;
+  gap: 60px;
   width: 80%;
   background-color: white;
   padding: 50px;
@@ -51,21 +51,24 @@
 }
 
 .home_approach_container button {
-  background-color: black;
-  border: none;
+  background-color: #FFC900;
+  border: 2px solid white;
   padding: 10px 35px;
-  font-size: 17px;
+  font-size: 20px;
   border-radius: 20px;
+  font-family:'Comfortaa', cursive ;
   cursor: pointer;
   /* transition: background 0.8s ease, color 0.8s ease; */
   color: white;
   display: inline-block;
   text-align: center;
+ 
 }
 
 .home_approach_container button:hover {
-  background: linear-gradient(#FFC800,#FFC800 );
+  background-color: white;
   color: black;
+  border: 2px solid black;
 
 }
 

@@ -51,19 +51,19 @@
 }
 
 .home_business_container_one:hover {
-  background-color: #FFC800;
-  border: 3px solid #FFC800;
-  color: black;
+  background-color: #FFC900;
+  border: 3px solid #FFC900;
+  color: white;
 }
 .home_business_container_two:hover {
-  background-color: #FFC800;
-  border: 3px solid #FFC800;
-  color: black;
+  background-color: #FFC900;
+  border: 3px solid #FFC900;
+  color: white;
 }
 .home_business_container_three:hover {
-  background-color: #FFC800;
-  border: 3px solid #FFC800;
-  color: black;
+  background-color: #FFC900;
+  border: 3px solid #FFC900;
+  color: white;
 }
 
 .home_business_container_one div:nth-child(1),

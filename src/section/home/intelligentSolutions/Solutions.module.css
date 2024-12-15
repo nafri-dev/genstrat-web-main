@@ -177,6 +177,7 @@
   .home_solutions_heading_container h1 {
     font-size: 32px;
     text-align: center;
+   
   }
 
   .home_solutions_heading_container p {
@@ -195,11 +196,12 @@
   .home_solutions_parallax_container_five {
     padding: 20px;
     margin-top: 20px;
-    height: 630px;
+    height: 650px;
   }
 
   .home_solutions_parallax_item_one h2 {
     font-size: 24px;
+    padding-top: 20px;
   }
 
   .home_solutions_parallax_item_one p {

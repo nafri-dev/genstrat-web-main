@@ -136,8 +136,9 @@ const Header = () => {
       <div className={headerStyles.navbar} ref={navbarRef}>
         <div className={headerStyles.navbar_container}>
           <div className={headerStyles.navbar_links}>
-            <div>
+            <div className={headerStyles.navbar_links_Image}>
               <Image
+              
                 src={logo.src}
                 alt="Logo"
                 onClick={() => window.scrollTo(0, 0)}
@@ -151,6 +152,9 @@ const Header = () => {
                 <li onClick={() => scrollToSection("product")}>Explore</li>
                 <li onClick={() => scrollToSection("solutions")}>
                   Opportunities
+                </li>
+                <li onClick={() => scrollToSection("pricing")}>
+                 Join Us
                 </li>
               </ul>
             </div>

@@ -16,7 +16,7 @@ const Technology = () => {
 
         <div className={techonologyStyles.home_technology_card_container}>
           <div className={techonologyStyles.home_technology_card_container_one}>
-            <h2>Next-Gen Innovation Hub: :</h2>
+            <h2>Next-Gen Innovation Hub:</h2>
             <div
               className={techonologyStyles.home_technology_card_img_container}
             >
