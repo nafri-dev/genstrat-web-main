@@ -87,7 +87,7 @@ const HeroSection = () => {
           <div className={heroStyles.hero_img_container}>
             <img src={genai.src} alt="img" />
           </div>
-          <p>
+          <p >
             &quot;Empowering the next generation with collaborative
 platforms, career opportunities, and innovative
 solutions through our dynamic cohort programs.

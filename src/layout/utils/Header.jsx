@@ -226,9 +226,9 @@ const Header = () => {
             <div className={headerStyles.form_phone_new_contents}>
               <p>If you need any assistance please contact :</p>
               <div>
-                <a href="tel:7795548941">+91 7795548941</a>
+                <a href="tel:9994535635">+91 9994535635</a>
                 <a href=""> | </a>
-                <a href="mailto:genstrat@gmail.com">genstrat@gmail.com</a>
+                <a href="mailto:henrich.genlabib@gmail.com">henrich.genlabib@gmail.com</a>
               </div>
             </div>
           </div>
