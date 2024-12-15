@@ -4,6 +4,7 @@ import one from "@/assets/home/one.jpg";
 import two from "@/assets/home/two.jpg";
 import three from "@/assets/home/three.jpg";
 import four from "@/assets/home/four.jpg";
+import Image from "next/image";
 
 const Functionality = () => {
   const [backgroundColor, setBackgroundColor] = useState("#97e7e133");
@@ -55,16 +56,16 @@ const Functionality = () => {
                 </p>
               </div>
               <div
-                className={functionalityStyles.functionality_first_item_img_div}
+                className={functionalityStyles.functionality_first_item_Image_div}
               >
-                <img src={one.src} alt="img" />
+                <Image src={one.src} alt="Image" />
               </div>
             </div>
             <div className={functionalityStyles.functionality_first_item_2}>
               <div
-                className={functionalityStyles.functionality_first_item_img_div}
+                className={functionalityStyles.functionality_first_item_Image_div}
               >
-                <img src={two.src} alt="img" />
+                <Image src={two.src} alt="Image" />
               </div>
               <div
                 className={
@@ -90,14 +91,14 @@ const Functionality = () => {
               </p>
               <div className={functionalityStyles.imageWrapper}>
                 <div className={functionalityStyles.imageOverlay}>
-                  <img
+                  <Image
                     src={three.src}
-                    alt="img"
+                    alt="Image"
                     className={functionalityStyles.imageBase}
                   />
-                  <img
+                  <Image
                     src={four.src}
-                    alt="img"
+                    alt="Image"
                     className={functionalityStyles.imageHover}
                   />
                 </div>
@@ -111,14 +112,14 @@ const Functionality = () => {
               </p>
               <div className={functionalityStyles.imageWrapper}>
                 <div className={functionalityStyles.imageOverlay}>
-                  <img
+                  <Image
                     src={four.src}
-                    alt="img"
+                    alt="Image"
                     className={functionalityStyles.imageBase}
                   />
-                  <img
+                  <Image
                     src={three.src}
-                    alt="img"
+                    alt="Image"
                     className={functionalityStyles.imageHover}
                   />
                 </div>
@@ -140,16 +141,16 @@ const Functionality = () => {
                 </p>
               </div>
               <div
-                className={functionalityStyles.functionality_third_item_img_div}
+                className={functionalityStyles.functionality_third_item_Image_div}
               >
-                <img src={one.src} alt="img" />
+                <Image src={one.src} alt="Image" />
               </div>
             </div>
             <div className={functionalityStyles.functionality_third_item_2}>
               <div
-                className={functionalityStyles.functionality_third_item_img_div}
+                className={functionalityStyles.functionality_third_item_Image_div}
               >
-                <img src={two.src} alt="img" />
+                <Image src={two.src} alt="Image" />
               </div>
               <div
                 className={

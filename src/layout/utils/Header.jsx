@@ -15,6 +15,7 @@ import { ModalContext } from "@/context/ModalContext";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "emailjs-com"; 
+import Image from 'next/image';
 
 const Header = () => {
   const { modalOpen, closeModal: close, openModal } = useContext(ModalContext);
@@ -136,7 +137,7 @@ const Header = () => {
         <div className={headerStyles.navbar_container}>
           <div className={headerStyles.navbar_links}>
             <div>
-              <img
+              <Image
                 src={logo.src}
                 alt="img"
                 onClick={() => window.scrollTo(0, 0)}

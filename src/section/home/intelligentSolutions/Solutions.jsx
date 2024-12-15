@@ -6,6 +6,7 @@ import solution2 from "@/assets/home/solution2.jpg";
 import solution3 from "@/assets/home/solution3.jpg";
 import solution4 from "@/assets/home/solution4.jpg";
 import solution5 from "@/assets/home/solution5.jpg";
+import Image from "next/image";
 
 const Solutions = () => {
   return (
@@ -39,8 +40,8 @@ const Solutions = () => {
                 </div>
               </div>
 
-              <div className={solutions.home_solutions_parallax_img_container}>
-                <img src={solution1.src} alt="img" />
+              <div className={solutions.home_solutions_parallax_Image_container}>
+                <Image src={solution1.src} alt="Image" />
               </div>
             </div>
 
@@ -52,13 +53,13 @@ const Solutions = () => {
                   <p>
                     GenLab fosters an ecosystem where students, startups, and
                     professionals collaborate effortlessly to design impactful
-                    solutions for tomorrow's challenges.
+                    solutions for tomorrows challenges.
                   </p>
                 </div>
               </div>
 
-              <div className={solutions.home_solutions_parallax_img_container}>
-                <img src={solution2.src} alt="img" />
+              <div className={solutions.home_solutions_parallax_Image_container}>
+                <Image src={solution2.src} alt="Image" />
               </div>
             </div>
 
@@ -74,8 +75,8 @@ const Solutions = () => {
                 </div>
               </div>
 
-              <div className={solutions.home_solutions_parallax_img_container}>
-                <img src={solution3.src} alt="img" />
+              <div className={solutions.home_solutions_parallax_Image_container}>
+                <Image src={solution3.src} alt="Image" />
               </div>
             </div>
 
@@ -91,8 +92,8 @@ const Solutions = () => {
                 </div>
               </div>
 
-              <div className={solutions.home_solutions_parallax_img_container}>
-                <img src={solution4.src} alt="img" />
+              <div className={solutions.home_solutions_parallax_Image_container}>
+                <Image src={solution4.src} alt="Image" />
               </div>
             </div>
 
@@ -108,8 +109,8 @@ const Solutions = () => {
                 </div>
               </div>
 
-              <div className={solutions.home_solutions_parallax_img_container}>
-                <img src={solution5.src} alt="img" />
+              <div className={solutions.home_solutions_parallax_Image_container}>
+                <Image src={solution5.src} alt="Image" />
               </div>
             </div>
           </div>

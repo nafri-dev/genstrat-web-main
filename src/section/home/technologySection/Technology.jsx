@@ -4,6 +4,7 @@ import techonologyStyles from "@/section/home/technologySection/Technology.modul
 import techOne from "@/assets/home/techOne.jpg";
 import techTwo from "@/assets/home/techTwo.jpg";
 import techThree from "@/assets/home/techThree.jpg";
+import Image from "next/image";
 
 const Technology = () => {
   return (
@@ -19,7 +20,7 @@ const Technology = () => {
             <div
               className={techonologyStyles.home_technology_card_img_container}
             >
-              <img src={techOne.src} alt="img" />
+              <Image src={techOne.src} alt="img" />
             </div>
             <p>
               Our platform empowers creativity and collaboration, bridging
@@ -32,7 +33,7 @@ const Technology = () => {
             <div
               className={techonologyStyles.home_technology_card_img_container}
             >
-              <img src={techTwo.src} alt="img" />
+              <Image src={techTwo.src} alt="img" />
             </div>
             <p>
               Our tools integrate effortlessly into workflows, enabling seamless
@@ -47,7 +48,7 @@ const Technology = () => {
             <div
               className={techonologyStyles.home_technology_card_img_container}
             >
-              <img src={techThree.src} alt="img" />
+              <Image src={techThree.src} alt="img" />
             </div>
             <p>
               Leveraging cutting-edge AI, we drive precise insights, creativity,

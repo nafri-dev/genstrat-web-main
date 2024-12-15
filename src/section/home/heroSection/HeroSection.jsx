@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import genai from "@/assets/home/landing-logo-text.png";
 import productImage from "@/assets/home/productImage.png";
 import { ModalContext } from "@/context/ModalContext";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -85,7 +86,7 @@ const HeroSection = () => {
       <div className={heroStyles.hero}>
         <div className={heroStyles.hero_container}>
           <div className={heroStyles.hero_img_container}>
-            <img src={genai.src} alt="img" />
+            <Image src={genai.src} alt="img" />
           </div>
           <p >
             &quot;Empowering the next generation with collaborative
@@ -110,7 +111,7 @@ solutions through our dynamic cohort programs.
           >
             <source src="/assets/homeVideo-1.mp4" type="video/mp4" />
           </video> */}
-          <img width="100%" height="100%" src={productImage.src} alt="img" />
+          <Image width="100%" height="100%" src={productImage.src} alt="img" />
         </div>
       </div>
     </Fragment>
