@@ -86,7 +86,9 @@ const HeroSection = () => {
       <div className={heroStyles.hero}>
         <div className={heroStyles.hero_container}>
           <div className={heroStyles.hero_img_container}>
-            <Image src={genai.src} alt="img" />
+            <Image src={genai.src} alt="img"  layout="responsive"
+                  width={500}
+                  height={300} />
           </div>
           <p >
             &quot;Empowering the next generation with collaborative
@@ -111,7 +113,9 @@ solutions through our dynamic cohort programs.
           >
             <source src="/assets/homeVideo-1.mp4" type="video/mp4" />
           </video> */}
-          <Image width="100%" height="100%" src={productImage.src} alt="img" />
+          <Image  src={productImage.src} alt="img"  layout="responsive"
+                  width={500}
+                  height={300}/>
         </div>
       </div>
     </Fragment>

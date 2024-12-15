@@ -20,7 +20,9 @@ const Technology = () => {
             <div
               className={techonologyStyles.home_technology_card_img_container}
             >
-              <Image src={techOne.src} alt="img" />
+              <Image src={techOne.src} alt="img"  layout="responsive"
+                  width={100}
+                  height={100}/>
             </div>
             <p>
               Our platform empowers creativity and collaboration, bridging
@@ -33,7 +35,9 @@ const Technology = () => {
             <div
               className={techonologyStyles.home_technology_card_img_container}
             >
-              <Image src={techTwo.src} alt="img" />
+              <Image src={techTwo.src} alt="img"  layout="responsive"
+                  width={100}
+                  height={100}/>
             </div>
             <p>
               Our tools integrate effortlessly into workflows, enabling seamless
@@ -48,7 +52,9 @@ const Technology = () => {
             <div
               className={techonologyStyles.home_technology_card_img_container}
             >
-              <Image src={techThree.src} alt="img" />
+              <Image src={techThree.src} alt="img"  layout="responsive"
+                  width={100}
+                  height={100}/>
             </div>
             <p>
               Leveraging cutting-edge AI, we drive precise insights, creativity,

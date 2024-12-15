@@ -27,9 +27,9 @@ const Solutions = () => {
           </div>
 
           <div className={solutions.home_solutions_parallax}>
+            {/* Container 1 */}
             <div className={solutions.home_solutions_parallax_container_one}>
               <div className={solutions.home_solutions_parallax_item_one}>
-             
                 <div>
                   <h2>Rapid Innovation Empower ideas to life</h2>
                   <p>
@@ -40,29 +40,42 @@ const Solutions = () => {
                 </div>
               </div>
 
-              <div className={solutions.home_solutions_parallax_Image_container}>
-                <Image src={solution1.src} alt="Image" />
+              <div className={solutions.home_solutions_parallax_img_container}>
+                <Image
+                  src={solution1}
+                  alt="Rapid Innovation Image"
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                />
               </div>
             </div>
 
+            {/* Container 2 */}
             <div className={solutions.home_solutions_parallax_container_two}>
               <div className={solutions.home_solutions_parallax_item_one}>
-               
                 <div>
                   <h2> Seamless Collaboration Connect, Create, Collaborate</h2>
                   <p>
                     GenLab fosters an ecosystem where students, startups, and
                     professionals collaborate effortlessly to design impactful
-                    solutions for tomorrows challenges.
+                    solutions for tomorrow’s challenges.
                   </p>
                 </div>
               </div>
 
-              <div className={solutions.home_solutions_parallax_Image_container}>
-                <Image src={solution2.src} alt="Image" />
+              <div className={solutions.home_solutions_parallax_img_container}>
+                <Image
+                  src={solution2}
+                  alt="Seamless Collaboration Image"
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                />
               </div>
             </div>
 
+            {/* Container 3 */}
             <div className={solutions.home_solutions_parallax_container_three}>
               <div className={solutions.home_solutions_parallax_item_one}>
                 <div>
@@ -75,28 +88,42 @@ const Solutions = () => {
                 </div>
               </div>
 
-              <div className={solutions.home_solutions_parallax_Image_container}>
-                <Image src={solution3.src} alt="Image" />
+              <div className={solutions.home_solutions_parallax_img_container}>
+                <Image
+                  src={solution3}
+                  alt="Comprehensive Mentorship Image"
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                />
               </div>
             </div>
 
+            {/* Container 4 */}
             <div className={solutions.home_solutions_parallax_container_four}>
               <div className={solutions.home_solutions_parallax_item_one}>
                 <div>
                   <h2>Scalable Solutions Innovations that grow with you</h2>
                   <p>
-                    From startups to enterprises, GenLabs resources and
+                    From startups to enterprises, GenLab’s resources and
                     infrastructure are tailored to scale your projects, ensuring
                     long-term sustainability and impact.
                   </p>
                 </div>
               </div>
 
-              <div className={solutions.home_solutions_parallax_Image_container}>
-                <Image src={solution4.src} alt="Image" />
+              <div className={solutions.home_solutions_parallax_img_container}>
+                <Image
+                  src={solution4}
+                  alt="Scalable Solutions Image"
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                />
               </div>
             </div>
 
+            {/* Container 5 */}
             <div className={solutions.home_solutions_parallax_container_five}>
               <div className={solutions.home_solutions_parallax_item_one}>
                 <div>
@@ -109,8 +136,15 @@ const Solutions = () => {
                 </div>
               </div>
 
-              <div className={solutions.home_solutions_parallax_Image_container}>
-                <Image src={solution5.src} alt="Image" />
+              <div className={solutions.home_solutions_parallax_img_container}>
+                <Image
+                  src={solution5}
+                  alt="End-to-End Support Image"
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                 
+                />
               </div>
             </div>
           </div>

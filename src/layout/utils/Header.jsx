@@ -14,8 +14,8 @@ import "react-phone-input-2/lib/style.css";
 import { ModalContext } from "@/context/ModalContext";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import emailjs from "emailjs-com"; 
-import Image from 'next/image';
+import emailjs from "emailjs-com";
+import Image from "next/image";
 
 const Header = () => {
   const { modalOpen, closeModal: close, openModal } = useContext(ModalContext);
@@ -139,16 +139,19 @@ const Header = () => {
             <div>
               <Image
                 src={logo.src}
-                alt="img"
+                alt="Logo"
                 onClick={() => window.scrollTo(0, 0)}
-                style={{ cursor: "pointer" }}
+                width={100} // Set width
+                height={100} // Set height
+                layout="intrinsic"
               />
             </div>
             <div>
               <ul className={menuOpen ? headerStyles.show_nav : ""}>
                 <li onClick={() => scrollToSection("product")}>Explore</li>
-                <li onClick={() => scrollToSection("solutions")}>Opportunities</li>
-               
+                <li onClick={() => scrollToSection("solutions")}>
+                  Opportunities
+                </li>
               </ul>
             </div>
           </div>
@@ -229,7 +232,9 @@ const Header = () => {
               <div>
                 <a href="tel:9994535635">+91 9994535635</a>
                 <a href=""> | </a>
-                <a href="mailto:henrich.genlabib@gmail.com">henrich.genlabib@gmail.com</a>
+                <a href="mailto:henrich.genlabib@gmail.com">
+                  henrich.genlabib@gmail.com
+                </a>
               </div>
             </div>
           </div>
