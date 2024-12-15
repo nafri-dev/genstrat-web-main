@@ -51,18 +51,18 @@
 }
 
 .home_business_container_one:hover {
-  background-color: #c6e0db;
-  border: 3px solid #c6e0db;
+  background-color: #C5E5A5;
+  border: 3px solid #C5E5A5;
   color: black;
 }
 .home_business_container_two:hover {
-  background-color: #fad8dc;
-  border: 3px solid #fad8dc;
+  background-color: #F9D876;
+  border: 3px solid #F9D876;
   color: black;
 }
 .home_business_container_three:hover {
-  background-color: #acbcff;
-  border: 3px solid #acbcff;
+  background-color: #EFE7BC;
+  border: 3px solid #EFE7BC;
   color: black;
 }
 

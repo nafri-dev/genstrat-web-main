@@ -64,30 +64,30 @@
 }
 
 .home_solutions_parallax_container_one {
-  background-color: #deedea;
+  background-color: #C5E5A5;
   z-index: 1;
   top: 15%;
 }
 
 .home_solutions_parallax_container_two {
-  background-color: #fbdfe2;
+  background-color: #98B66E;
   z-index: 2;
   top: 20%;
 }
 
 .home_solutions_parallax_container_three {
-  background-color: #faf0d3;
+  background-color: #F9D876;
   z-index: 3;
   top: 25%;
 }
 
 .home_solutions_parallax_container_four {
-  background-color: #cabfda;
+  background-color: #FBE39D;
   z-index: 4;
   top: 30%;
 }
 .home_solutions_parallax_container_five {
-  background-color: #cbdff0;
+  background-color: #EFE7BC;
   z-index: 5;
 }
 

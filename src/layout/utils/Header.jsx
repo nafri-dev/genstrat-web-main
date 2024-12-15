@@ -90,10 +90,10 @@ const Header = () => {
 
       emailjs
         .send(
-          "service_kzeld9d", // Replace with your EmailJS service ID
-          "template_3pktago", // Replace with your EmailJS template ID
+          "service_twjdkap", // Replace with your EmailJS service ID
+          "template_veofnfx", // Replace with your EmailJS template ID
           templateParams,
-          "64Y-ASjE4dLEmnxzc" // Replace with your EmailJS user ID
+          "5Czk5Gi-bcnN23oyr" // Replace with your EmailJS user ID
         )
         .then(
           (response) => {

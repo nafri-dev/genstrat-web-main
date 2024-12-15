@@ -7,6 +7,7 @@
   gap: 100px;
   height: auto;
   padding: 50px 0px;
+  background-color: #E8E9Eb;
 }
 
 .home_technology_heading_container {
@@ -53,15 +54,15 @@
 }
 
 .home_technology_card_container_one {
-  background-color: #cde8e5;
+  background-color: #FFF;
 }
 
 .home_technology_card_container_two {
-  background-color: #ffecec;
+  background-color: #FFF;
 }
 
 .home_technology_card_container_three {
-  background-color: #acbcff;
+  background-color: #FFF;
 }
 
 .home_technology_card_container_one h2,
