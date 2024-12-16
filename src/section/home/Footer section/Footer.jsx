@@ -29,10 +29,10 @@ export default function Footer() {
             <Link href="#" className={styles.socialIcon} aria-label="Twitter">
               <span className={styles.iconBackground}><InstagramIcon /></span>
             </Link>
-            <Link href="#" className={styles.socialIcon} aria-label="LinkedIn">
+            <Link href="https://www.linkedin.com/company/genlabib/" className={styles.socialIcon} aria-label="LinkedIn">
               <span className={styles.iconBackground}><Linkedin /></span>
             </Link>
-            <Link href="#" className={styles.socialIcon} aria-label="Email">
+            <Link href="mailto:henrich.genlabib@gmail.com" className={styles.socialIcon} aria-label="Email">
               <span className={styles.iconBackground}><Mail /></span>
             </Link>
           </div>

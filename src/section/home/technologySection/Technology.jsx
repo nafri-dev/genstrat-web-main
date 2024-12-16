@@ -35,7 +35,7 @@ const Technology = () => {
             <div
               className={techonologyStyles.home_technology_card_img_container}
             >
-              <Image src={techTwo.src} alt="img"  layout="responsive"
+              <Image src={techThree.src} alt="img"  layout="responsive"
                   width={100}
                   height={100}/>
             </div>
@@ -52,7 +52,7 @@ const Technology = () => {
             <div
               className={techonologyStyles.home_technology_card_img_container}
             >
-              <Image src={techThree.src} alt="img"  layout="responsive"
+              <Image src={techTwo.src} alt="img"  layout="responsive"
                   width={100}
                   height={100}/>
             </div>
