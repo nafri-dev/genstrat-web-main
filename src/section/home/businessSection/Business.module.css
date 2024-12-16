@@ -39,6 +39,7 @@
 .home_business_container_three {
   width: 100%;
   display: flex;
+  background-color: white;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;

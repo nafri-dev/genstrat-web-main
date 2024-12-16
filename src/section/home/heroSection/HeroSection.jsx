@@ -96,7 +96,7 @@ platforms, career opportunities, and innovative
 solutions through our dynamic cohort programs.
 &quot;
           </p>
-          <div><button className={heroStyles.font} onClick={openModal}>Get Started with GenLab IB</button></div>
+          <button  onClick={openModal}>Get Started with GenLab IB</button>
           
         </div>
       </div>

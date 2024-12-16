@@ -1,5 +1,6 @@
 import Approach from '@/section/home/approachSection/Approach'
 import Business from '@/section/home/businessSection/Business'
+import Footer from '@/section/home/Footer section/Footer'
 //import Functionality from '@/section/home/functionalitySection/Functionality'
 import HeroSection from '@/section/home/heroSection/HeroSection'
 import Solutions from '@/section/home/intelligentSolutions/Solutions'
@@ -16,6 +17,7 @@ const Home = () => {
       <Business />
       <Technology />
       <Approach />
+      <Footer />
     </Fragment>
   )
 }

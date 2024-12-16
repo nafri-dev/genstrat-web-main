@@ -19,7 +19,7 @@
 
 .home_technology_heading_container h2 {
   text-align: center;
-  font-size: 48px;
+  font-size: 42px;
   font-weight: 300;
   width: 100%;
 }
@@ -154,7 +154,7 @@
     gap: 50px;
   }
   .home_technology_heading_container h2 {
-    font-size: 34px;
+    font-size: 40px;
   }
 
   .home_technology_card_container_one,
@@ -196,7 +196,7 @@
     gap: 50px;
   }
   .home_technology_heading_container h2 {
-    font-size: 30px;
+    font-size: 38px;
   }
   .home_technology_card_container_one,
   .home_technology_card_container_two,
