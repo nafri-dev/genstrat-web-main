@@ -42,8 +42,8 @@ export default function Footer() {
         </div>
         <nav className={styles.navLinks}>
           <p href="#"   className={styles.navLink1}>Contacts</p>
-          <Link href="#"   onClick={openModal} className={styles.navLink}>Enquiry</Link>
-          <Link href="#"   onClick={openModal} className={styles.navLink}>Investors Relations</Link>
+          <p  onClick={openModal} className={styles.navLink}>Enquiry</p>
+          <p onClick={openModal} className={styles.navLink}>Investors Relations</p>
           
       
        
