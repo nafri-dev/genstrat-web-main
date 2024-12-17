@@ -41,6 +41,7 @@ const Solutions = () => {
               </div>
 
               <div className={solutions.home_solutions_parallax_img_container}>
+              
                 <Image
                   src={solution1}
                   alt="Rapid Innovation Image"
@@ -48,6 +49,7 @@ const Solutions = () => {
                   width={100}
                   height={100}
                 />
+             
               </div>
             </div>
 

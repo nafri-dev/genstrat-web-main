@@ -1,12 +1,15 @@
+import { useContext } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import {  Linkedin, Mail, InstagramIcon } from 'lucide-react'
 import styles from './Footer.module.css'
 import logo from "@/assets/logo/Logo2.png";
+import { ModalContext } from "@/context/ModalContext";
 
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const { openModal } = useContext(ModalContext);
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
@@ -38,9 +41,9 @@ export default function Footer() {
           </div>
         </div>
         <nav className={styles.navLinks}>
-          <Link href="#" className={styles.navLink1}>Contacts</Link>
-          <Link href="#" className={styles.navLink}>Enquiry</Link>
-          <Link href="#" className={styles.navLink}>Investors Relations</Link>
+          <p href="#"   className={styles.navLink1}>Contacts</p>
+          <Link href="#"   onClick={openModal} className={styles.navLink}>Enquiry</Link>
+          <Link href="#"   onClick={openModal} className={styles.navLink}>Investors Relations</Link>
           
       
        

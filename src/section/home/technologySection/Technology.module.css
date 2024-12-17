@@ -79,7 +79,7 @@
   border-radius: 15px;
 }
 
-.home_technology_card_img_container img {
+.home_technology_card_img_container_img {
   width: 100%;
   height: 100%;
   transition: transform 0.5s ease;
@@ -206,7 +206,8 @@
     padding: 20px;
     transform: none;
     transition: none;
-    height: 320px;
+    height: 350px;
+    gap: 5px;
   }
 
   .home_technology_card_container_one:hover,
@@ -216,6 +217,7 @@
   }
   .home_technology_card_container {
     flex-direction: column;
+   
   }
   .home_technology_card_container_one p,
   .home_technology_card_container_two p,

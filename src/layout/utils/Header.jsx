@@ -150,11 +150,11 @@ const Header = () => {
             <div>
               <ul className={menuOpen ? headerStyles.show_nav : ""}>
                 <li onClick={() => scrollToSection("product")}>Explore</li>
-                <li onClick={() => scrollToSection("solutions")}>
-                  Opportunities
-                </li>
                 <li onClick={() => scrollToSection("pricing")}>
-                 Join Us
+                Join Us  
+                </li>
+                <li onClick={() => scrollToSection("approach")}>
+                 Opportunities
                 </li>
               </ul>
             </div>

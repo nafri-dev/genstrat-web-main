@@ -10,7 +10,7 @@ const Approach = () => {
   //&rsquo;
   return (
     <Fragment>
-      <div className={approachStyles.home_approach_main}>
+      <div className={approachStyles.home_approach_main} id="approach">
         <div className={approachStyles.home_approach}>
           <div className={approachStyles.home_approach_container}>
             <h3>

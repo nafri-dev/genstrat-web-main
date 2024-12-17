@@ -20,9 +20,11 @@ const Technology = () => {
             <div
               className={techonologyStyles.home_technology_card_img_container}
             >
-              <Image src={techOne.src} alt="img"  layout="responsive"
+             <div  className={techonologyStyles.home_technology_card_img_container_img }><Image  src={techOne.src} alt="img"  layout="responsive"
                   width={100}
-                  height={100}/>
+                  height={100}
+                  />
+                  </div>
             </div>
             <p>
               Our platform empowers creativity and collaboration, bridging
