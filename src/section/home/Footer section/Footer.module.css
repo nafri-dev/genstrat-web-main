@@ -3,6 +3,8 @@
   color: #1c1c1c;
   padding: 20px;
   position: relative;
+ 
+  
 }
 
 .container {
@@ -12,6 +14,9 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  height: 30vh;
+  padding-top: 3%;
+  
 }
 
 .logo {
@@ -103,11 +108,20 @@
   .allRights{
     margin-right: 0;
   }
+  .container{
+    height: 25vh;
+  }
+}
+@media (min-width:768px) and (max-width:1088px){
+.container{
+  padding-top: 5%;
+}
 }
 @media (min-width: 768px) {
   .container {
     flex-direction: row;
     align-items: flex-start;
+   
   }
 
   .logo {
@@ -134,6 +148,8 @@
   }
   .container{
     padding:20px;
+    
+   
   }
 
   .allRights {

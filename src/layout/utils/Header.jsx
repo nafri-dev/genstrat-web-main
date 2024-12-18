@@ -176,7 +176,7 @@ const Header = () => {
       </div>
       <Modal open={modalOpen} onClose={closeModal} center>
         <div className={headerStyles.apply_now_modal}>
-          <h3>Contact Us</h3>
+          <h3>Have questions or ideas?<br></br> We re here to help!</h3>
           <div className={headerStyles.apply_now_modal_container}>
             <div className={headerStyles.apply_now_modal_container_item}>
               <input
@@ -191,6 +191,21 @@ const Header = () => {
                 {nameError}
               </p>
             </div>
+            
+            <div className={headerStyles.apply_now_modal_container_item}>
+              <input
+                placeholder="Email *"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <p
+                className={headerStyles.error}
+                style={{ display: emailError ? "block" : "none" }}
+              >
+                {emailError}
+              </p>
+            </div>
+
             <div className={headerStyles.apply_now_modal_container_item}>
               <div className={headerStyles.form_phone_new_input}>
                 <PhoneInput
@@ -212,19 +227,6 @@ const Header = () => {
                 style={{ display: mobileError ? "block" : "none" }}
               >
                 {mobileError}
-              </p>
-            </div>
-            <div className={headerStyles.apply_now_modal_container_item}>
-              <input
-                placeholder="Email *"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-              <p
-                className={headerStyles.error}
-                style={{ display: emailError ? "block" : "none" }}
-              >
-                {emailError}
               </p>
             </div>
             <div className={headerStyles.form_phone_new_button}>

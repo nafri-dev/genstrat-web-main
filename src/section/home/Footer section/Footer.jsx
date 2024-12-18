@@ -8,7 +8,7 @@ import { ModalContext } from "@/context/ModalContext";
 
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
+ 
   const { openModal } = useContext(ModalContext);
   return (
     <footer className={styles.footer}>
@@ -35,9 +35,7 @@ export default function Footer() {
             <Link href="https://www.linkedin.com/company/genlabib/" className={styles.socialIcon} aria-label="LinkedIn">
               <span className={styles.iconBackground}><Linkedin /></span>
             </Link>
-            <Link href="mailto:henrich.genlabib@gmail.com" className={styles.socialIcon} aria-label="Email">
-              <span className={styles.iconBackground}><Mail /></span>
-            </Link>
+           
           </div>
         </div>
         <nav className={styles.navLinks}>
@@ -50,12 +48,12 @@ export default function Footer() {
         </nav>
 
       </div>
-      <div className={styles.copyright}>
+      {/*<div className={styles.copyright}>
         <p>
           © Copyright {currentYear} GenLab Innovation Hub.
           <span className={styles.allRights}>All Rights Reserved.</span>
         </p>
-      </div>
+      </div>*/}
      
     </footer>
   )

@@ -2,11 +2,13 @@ import React, { Fragment } from "react";
 import approachStyles from "@/section/home/approachSection/Approach.module.css";
 import { useContext } from "react";
 import { ModalContext } from "@/context/ModalContext";
+import Footer from "../Footer section/Footer";
+import Link from "next/link";
 
 
 const Approach = () => {
   const { openModal } = useContext(ModalContext);
-
+  const currentYear = new Date().getFullYear();
   //&rsquo;
   return (
     <Fragment>
@@ -21,9 +23,29 @@ const Approach = () => {
             <button onClick={openModal}>Innovate with GenLab IB</button>
           </div>
         </div>
-        
+        </div>
+        <Footer />
+        <div  className={approachStyles.home_approach_main_2}>
+        <div className={approachStyles.home_approach_hr_container}>
+         
+          
+            <p>
+              © Copyright {currentYear} GenLab Innovation Hub. All Rights
+              Reserved.
+            </p>
+
+           {/* <nav className={approachStyles.navLinks}>
+          <Link href="#" className={approachStyles.navLink}>Contacts</Link>
+          <Link href="#" className={approachStyles.navLink}>Enquiry</Link>
+          <Link href="#" className={approachStyles.navLink} >Investors Relations</Link>
+          
+      
        
-      </div>
+        </nav>*/}
+
+          
+        </div>
+        </div>
     </Fragment>
   );
 };
