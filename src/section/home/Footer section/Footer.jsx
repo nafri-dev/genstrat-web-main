@@ -1,9 +1,11 @@
 import { useContext } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import {  Linkedin, Mail, InstagramIcon } from 'lucide-react'
+
 import styles from './Footer.module.css'
 import logo from "@/assets/logo/Logo2.png";
+import Insta from "@/assets/home/instagram.png"
+import Linkedin from "@/assets/home/Twitter.png"
 import { ModalContext } from "@/context/ModalContext";
 
 
@@ -30,12 +32,25 @@ export default function Footer() {
           <div className={styles.socialLinks}>
           
             <Link href="#" className={styles.socialIcon} aria-label="Twitter">
-              <span className={styles.iconBackground}><InstagramIcon /></span>
+            <span >
+          <Image
+            src={Insta.src} // Path to your LinkedIn icon
+            alt="LinkedIn"
+            width={26}
+            height={26} // Adjust size as needed
+          />
+        </span>
             </Link>
             <Link href="https://www.linkedin.com/company/genlabib/" className={styles.socialIcon} aria-label="LinkedIn">
-              <span className={styles.iconBackground}><Linkedin /></span>
-            </Link>
-           
+            <span >
+          <Image
+            src={Linkedin.src} // Path to your LinkedIn icon
+            alt="LinkedIn"
+            width={26}
+            height={26} // Adjust size as needed
+          />
+        </span>
+</Link>           
           </div>
         </div>
         <nav className={styles.navLinks}>

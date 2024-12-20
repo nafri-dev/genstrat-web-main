@@ -24,15 +24,16 @@ const Approach = () => {
           </div>
         </div>
         </div>
+        <div>
         <Footer />
+        </div>
         <div  className={approachStyles.home_approach_main_2}>
         <div className={approachStyles.home_approach_hr_container}>
          
-          
-            <p>
-              © Copyright {currentYear} GenLab Innovation Hub. All Rights
-              Reserved.
-            </p>
+        <p>
+          © Copyright {currentYear} GenLab Innovation Hub.
+          <span className={approachStyles.allRights}>All Rights Reserved.</span>
+        </p>
 
            {/* <nav className={approachStyles.navLinks}>
           <Link href="#" className={approachStyles.navLink}>Contacts</Link>

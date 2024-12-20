@@ -3,8 +3,6 @@
   color: #1c1c1c;
   padding: 20px;
   position: relative;
- 
-  
 }
 
 .container {
@@ -14,9 +12,9 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  height: 30vh;
-  padding-top: 3%;
-  
+  height: 30%;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 .logo {
@@ -39,7 +37,6 @@
 }
 
 .socialIcon {
-  color: #ffffff;
   transition: color 0.3s ease;
 }
 
@@ -47,15 +44,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  background-color: #1c1c1c;
-  border-radius: 50%;
-  transition: background-color 0.3s ease;
-}
-
-.socialIcon:hover .iconBackground {
-  background-color: #333333;
+  width: 3.5rem;
+  height: 3.5rem;
 }
 
 .navLinks {
@@ -66,22 +56,19 @@
 }
 
 .copyright {
-  position:absolute;
+  position: absolute;
   bottom: 1rem;
- right: 2rem;
-
+  right: 2rem;
 
   font-size: 0.8rem;
   background: #ffc900;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-
 }
 
 .allRights {
   display: inline;
   margin-right: 50px;
- 
 }
 
 .navLink {
@@ -104,24 +91,24 @@
   color: #ffc900;
 }
 
-@media (min-width:768px) and (max-width:1440px){
-  .allRights{
+@media (min-width: 768px) and (max-width: 1440px) {
+  .allRights {
     margin-right: 0;
   }
-  .container{
-    height: 25vh;
+  .container {
+    height: 25%;
   }
 }
-@media (min-width:768px) and (max-width:1088px){
-.container{
-  padding-top: 5%;
-}
+@media (min-width: 768px) and (max-width: 1088px) {
+  .container {
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
 }
 @media (min-width: 768px) {
   .container {
     flex-direction: row;
     align-items: flex-start;
-   
   }
 
   .logo {
@@ -131,7 +118,6 @@
   .socialLinks {
     margin-bottom: 0;
   }
-  
 }
 
 @media (max-width: 487px) {
@@ -143,14 +129,10 @@
     position: static;
     text-align: center;
     margin-top: 2rem;
-    
-
   }
-  .container{
-    padding:20px;
-    height: 40vh;
-    
-   
+  .container {
+    padding: 20px;
+    height: 40%;
   }
 
   .allRights {
@@ -158,4 +140,3 @@
     margin-right: 0;
   }
 }
-

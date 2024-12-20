@@ -200,7 +200,10 @@
 }
 
 .apply_now_modal {
-  width: 30vw;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
 }
 
 .apply_now_modal_container {
@@ -209,6 +212,24 @@
   align-items: center;
   gap: 30px;
   margin-top: 30px;
+  width: 50%;
+}
+.apply_now_modal_container h3{
+  display: none;
+}
+.apply_now_modal_container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  margin-top: 30px;
+  width: 50%;
+}
+.apply_now_modal_container2 p{
+width: 90%;
+}
+.apply_now_modal_container2 h3{
+width: 90%;
 }
 
 .apply_now_modal_container_item{
@@ -218,11 +239,11 @@
 
 .apply_now_modal_container input {
   width: 100%;
-  padding: 10px 10px;
+  padding: 8px 10px;
   outline: none;
   border: none;
-  border-bottom: 1px solid #848282;
-  border-radius: 10px;
+  border-bottom: 1px solid black;
+
 }
 
 .apply_now_modal h3 {
@@ -231,7 +252,8 @@
 }
 
 .form_phone_new_contents {
-  display: flex;
+  display: none;
+  
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -248,18 +270,40 @@
   font-size: 10px;
   color: #0197f4;
 }
-
+.form_phone_new_button{
+  margin-top: 5px;
+}
 .form_phone_new_button button {
-  padding: 10px 25px;
-  background-image: linear-gradient(#FFC800, #FFC800);
+  font-family: 'Comfortaa', cursive;
+  padding: 10px 100px;
+  background-image: linear-gradient(100deg, #FFC800, #c5e5a5);
   border: none;
   outline: none;
   color: #fff;
   border-radius: 20px;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 500;
-  cursor: pointer;
+  
 }
+.form_phone_new_contents2 {
+  display: flex;
+ 
+  width: 90%;
+  flex-direction: column;
+}
+.form_phone_new_contents2 p {
+ 
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.form_phone_new_contents2 a {
+  text-decoration: none;
+  font-size: 10px;
+  color: #0197f4;
+}
+
+
 
 /* PhoneInputStyles */
 
@@ -289,7 +333,7 @@
 .form_phone_new_input {
   padding-bottom: 5px;
   border-bottom: 1px solid #848282;
-  border-radius: 10px;
+
   width: 100% !important;
 }
 
@@ -319,18 +363,70 @@
 /* .fileName{
   color: #848282;
 } */
-
+@media screen and (max-width: 1440px){
+.apply_now_modal{
+  height: 40vh;
+}
+}
 @media screen and (max-width: 900px) {
   .apply_now_modal {
     width: 55vw;
+    height: 50vh;
+  }
+  
+  .apply_now_modal h3 {
+    font-size: 20px;
+    
+  }
+  .apply_now_modal_container2{
+    display: none;
+  }
+  .apply_now_modal_container{
+    width: 100%;
+  }
+  .form_phone_new_contents{
+    display: flex;
+  }
+  .apply_now_modal_container h3{
+    display: flex;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 600px) {
   .apply_now_modal {
-    width: 75vw;
+    width: 80vw;
+    height:55vh;
+  }
+  .apply_now_modal h3 {
+    font-size: 20px;
+    
+  }
+  .apply_now_modal_container2{
+    display: none;
+  }
+  .apply_now_modal_container{
+    width: 100%;
+  }
+  .form_phone_new_contents{
+    display: flex;
+  }
+  .apply_now_modal_container h3{
+    display: flex;
+    width: 100%;
   }
 }
+@media screen and (max-width: 320px){
+.form_phone_new_button button{
+  padding: 10px 30px;
+}
+}
+
+@media screen and (max-width: 380px){
+  .form_phone_new_button button{
+    padding: 10px 70px;
+  }
+  }
 
 .customPhoneInputContainer .country-list {
   max-height: 200px; /* Adjust the height as needed */

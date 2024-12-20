@@ -138,7 +138,6 @@ const Header = () => {
           <div className={headerStyles.navbar_links}>
             <div className={headerStyles.navbar_links_Image}>
               <Image
-              
                 src={logo.src}
                 alt="Logo"
                 onClick={() => window.scrollTo(0, 0)}
@@ -150,11 +149,9 @@ const Header = () => {
             <div>
               <ul className={menuOpen ? headerStyles.show_nav : ""}>
                 <li onClick={() => scrollToSection("product")}>Explore</li>
-                <li onClick={() => scrollToSection("pricing")}>
-                Join Us  
-                </li>
+                <li onClick={() => scrollToSection("pricing")}>Join Us</li>
                 <li onClick={() => scrollToSection("approach")}>
-                 Opportunities
+                  Opportunities
                 </li>
               </ul>
             </div>
@@ -176,8 +173,29 @@ const Header = () => {
       </div>
       <Modal open={modalOpen} onClose={closeModal} center>
         <div className={headerStyles.apply_now_modal}>
-          <h3>Have questions or ideas?<br></br> We re here to help!</h3>
+          <div className={headerStyles.apply_now_modal_container2}>
+            <h3>
+              Have questions or ideas?<br></br> We re here to help!
+            </h3>
+            <p>
+              Drop your details, and we&rsquo;ll get back to you to start building
+              something extraordinary together.
+            </p>
+            <div className={headerStyles.form_phone_new_contents2}>
+              <p>If you need any assistance please contact :</p>
+              <div>
+                <a href="tel:9994535635">+91 9994535635</a>
+                <a href=""> | </a>
+                <a href="mailto:henrich.genlabib@gmail.com">
+                  henrich.genlabib@gmail.com
+                </a>
+              </div>
+            </div>
+          </div>
           <div className={headerStyles.apply_now_modal_container}>
+          <h3>
+              Have questions or ideas?<br></br> We re here to help!
+            </h3>
             <div className={headerStyles.apply_now_modal_container_item}>
               <input
                 placeholder="Name *"
@@ -191,7 +209,7 @@ const Header = () => {
                 {nameError}
               </p>
             </div>
-            
+
             <div className={headerStyles.apply_now_modal_container_item}>
               <input
                 placeholder="Email *"
@@ -230,7 +248,7 @@ const Header = () => {
               </p>
             </div>
             <div className={headerStyles.form_phone_new_button}>
-              <button onClick={handleSubmit}>Submit</button>
+              <button onClick={handleSubmit}>Send Message</button>
             </div>
 
             <div className={headerStyles.form_phone_new_contents}>
