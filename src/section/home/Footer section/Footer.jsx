@@ -7,7 +7,7 @@ import logo from "@/assets/logo/Logo2.png";
 import Insta from "@/assets/home/instagram.png"
 import Linkedin from "@/assets/home/Twitter.png"
 import { ModalContext } from "@/context/ModalContext";
-
+//hi
 
 export default function Footer() {
  
