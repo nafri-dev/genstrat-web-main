@@ -4,7 +4,7 @@ import Link from "next/link"
 
 import styles from './Footer.module.css'
 import logo from "@/assets/logo/Logo2.png";
-import Insta from "@/assets/home/instagram.png"
+import Insta from "@/assets/home/logo5.png"
 import Linkedin from "@/assets/home/Twitter.png"
 import { ModalContext } from "@/context/ModalContext";
 //hi
@@ -31,7 +31,7 @@ export default function Footer() {
           </p>
           <div className={styles.socialLinks}>
           
-            <Link href="#" className={styles.socialIcon} aria-label="Twitter">
+            <Link href="#" className={styles.socialIcon} aria-label="instagram">
             <span >
           <Image
             src={Insta.src} // Path to your LinkedIn icon
