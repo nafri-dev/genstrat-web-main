@@ -29,6 +29,7 @@ const Header = () => {
   const [nameError, setNameError] = useState("");
   const [mobileError, setMobileError] = useState("");
   const [emailError, setEmailError] = useState("");
+  const [isFocused, setIsFocused] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -171,15 +172,15 @@ const Header = () => {
           </button>
         </div>
       </div>
-      <Modal open={modalOpen} onClose={closeModal} center>
+      <Modal open={modalOpen} onClose={closeModal}    showCloseIcon={false}  center>
         <div className={headerStyles.apply_now_modal}>
           <div className={headerStyles.apply_now_modal_container2}>
             <h3>
-              Have questions or ideas?<br></br> We re here to help!
+              Have questions or ideas?<br></br> We&rsquo;re here to help!
             </h3>
             <p>
-              Drop your details, and we&rsquo;ll get back to you to start building
-              something extraordinary together.
+              Drop your details, and we&rsquo;ll get back to you to start
+              building something extraordinary together.
             </p>
             <div className={headerStyles.form_phone_new_contents2}>
               <p>If you need any assistance please contact :</p>
@@ -193,15 +194,18 @@ const Header = () => {
             </div>
           </div>
           <div className={headerStyles.apply_now_modal_container}>
-          <h3>
-              Have questions or ideas?<br></br> We re here to help!
+            <h3>
+              Have questions or ideas?<br></br> We&rsquo;re here to help!
             </h3>
             <div className={headerStyles.apply_now_modal_container_item}>
               <input
-                placeholder="Name *"
+                placeholder=""
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
+              <label className={headerStyles.apply_label} for="name">
+                Enter your name
+              </label>
               <p
                 className={headerStyles.error}
                 style={{ display: nameError ? "block" : "none" }}
@@ -212,10 +216,13 @@ const Header = () => {
 
             <div className={headerStyles.apply_now_modal_container_item}>
               <input
-                placeholder="Email *"
+                placeholder=""
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
+              <label className={headerStyles.apply_label} for="email">
+                Enter your email
+              </label>
               <p
                 className={headerStyles.error}
                 style={{ display: emailError ? "block" : "none" }}
@@ -230,6 +237,9 @@ const Header = () => {
                   country={"in"}
                   value={mobile}
                   onChange={(phone) => setMobile(phone)}
+                  onFocus={() => setIsFocused(true)} // Set focus state
+                  onBlur={() => setIsFocused(false)} // Reset focus state
+                  placeholder="" // Disable default placeholder
                   containerClass={headerStyles.customPhoneInputContainer}
                   inputClass={headerStyles.customPhoneInput}
                   buttonClass={headerStyles.customPhoneInputButton}
@@ -239,7 +249,16 @@ const Header = () => {
                     WebkitOverflowScrolling: "touch",
                   }}
                 />
+                {/* Floating label */}
+                <label
+                  className={`${headerStyles.floatingLabel} ${
+                    mobile || isFocused ? headerStyles.filled : ""
+                  }`}
+                >
+                  Enter your phone number
+                </label>
               </div>
+              {/* Error message */}
               <p
                 className={headerStyles.error}
                 style={{ display: mobileError ? "block" : "none" }}
@@ -247,6 +266,7 @@ const Header = () => {
                 {mobileError}
               </p>
             </div>
+
             <div className={headerStyles.form_phone_new_button}>
               <button onClick={handleSubmit}>Send Message</button>
             </div>
