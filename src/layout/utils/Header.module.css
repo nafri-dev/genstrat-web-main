@@ -260,13 +260,15 @@ width: 90%;
   pointer-events: none;
 }
 
-.apply_now_modal_container_item input:focus + .apply_label,
+/*.apply_now_modal_container_item input:focus + .apply_label,
 .apply_now_modal_container_item input:not(:placeholder-shown) + .apply_label {
   top: -10px;
   left: 5px;
   font-size: 10px;
-  color: gray; /* Change this to your preferred label color */
-}
+  color: gray; /* Change this to your preferred label color 
+}*/
+
+
 
 .apply_now_modal h3 {
   font-size: 24px;
@@ -327,22 +329,48 @@ width: 90%;
 }
 .floatingLabel {
   position: absolute;
-  top: 47%; /* Align with the middle of the input */
-  left: 80px; /* Adjust to align with the padding-left of input */
-  transform: translateY(-50%);
+  top: 47%; /* Default position */
+  left: 80px;
   font-size: 14px;
-  color: #aaa;
-  pointer-events: none;
+  transform: translateY(-50%);
   transition: all 0.3s ease;
+  pointer-events: none; /* Prevent interaction with the label */
+  color: #aaa;
 }
 
-/* Label floats up when input is focused or has value */
-.floatingLabel.filled {
-  top: -10px;
-  left: 55px;
-  font-size: 10px;
-  color: gray;
+.floatingLabel.filled,
+.apply_now_modal_container_item input:focus + .floatingLabel {
+  top: -8px; /* Move the label up */
+  left:50px;
+  font-size: 12px;
+  color: #000;
 }
+
+.floatingLabel2 {
+  position: absolute;
+  top: 50%; /* Default position */
+  left: 5px;
+  font-size: 14px;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+  pointer-events: none; /* Prevent interaction with the label */
+  color: #aaa;
+}
+
+.floatingLabel2.filled,
+.apply_now_modal_container_item input:focus + .floatingLabel2 {
+  top: -8px; /* Move the label up */
+  font-size: 12px;
+  color: #000;
+}
+
+
+
+.apply_now_modal_container_item input:focus {
+  outline: none;
+  
+}
+
 
 /* PhoneInputStyles */
 
