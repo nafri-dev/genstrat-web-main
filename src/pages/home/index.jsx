@@ -5,6 +5,8 @@ import Business from '@/section/home/businessSection/Business'
 import HeroSection from '@/section/home/heroSection/HeroSection'
 import Solutions from '@/section/home/intelligentSolutions/Solutions'
 import Technology from '@/section/home/technologySection/Technology'
+import TestimonialSection from '@/section/home/Testimonial Section/TestimonialSection'
+//import TestimonialSection from '@/section/home/Testimonial Section/TestimonialSection'
 import React from 'react'
 import { Fragment } from 'react'
 
@@ -16,8 +18,10 @@ const Home = () => {
       <Solutions />
       <Business />
       <Technology />
+    {/*<TestimonialSection />*/}
       <Approach />
      {/* <Footer />*/}
+    
     </Fragment>
   )
 }
