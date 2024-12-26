@@ -172,7 +172,7 @@ const Header = () => {
           </button>
         </div>
       </div>
-      <Modal open={modalOpen} onClose={closeModal} showCloseIcon={false} center>
+      <Modal open={modalOpen} onClose={closeModal} showCloseIcon={false}  focusTrapped={false}  center>
         <div className={headerStyles.apply_now_modal}>
           <div className={headerStyles.apply_now_modal_container2}>
             <h3>
