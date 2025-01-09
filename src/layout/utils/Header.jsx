@@ -108,7 +108,7 @@ const Header = () => {
         // Send data to Google Sheets
         const sheetResponse = await fetch('https://script.google.com/macros/s/AKfycbw0PkQe8sPEkHIGCqG28zS9DmVP6Lv6pP7h6oStOYiBK59WLgZStiaINcelcysFoBnE/exec', {
           method: 'POST',
-        
+        mode:'no-cors',
           cache: 'no-cache',
           
           headers: {
