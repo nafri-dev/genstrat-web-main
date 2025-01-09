@@ -7,7 +7,7 @@ const Alo = () => {
   return (
     <Fragment>
          <Head>
-        <title>Home - Empowering the Next Generation</title>
+        <title>Empowering the Next Generation</title>
         <meta
           name="description"
           content="Join GenLab IB to explore and develop your skills in a collaborative environment."

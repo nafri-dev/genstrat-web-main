@@ -96,23 +96,30 @@ const Header = () => {
 
       try {
         // Send email using EmailJS
-        const emailResult = await emailjs.send(
-         "service_twjdkap",
-         "template_veofnfx",
-          formData,
-          "5Czk5Gi-bcnN23oyr"
-        );
+        // const emailResult = await emailjs.send(
+        //  "service_twjdkap",
+        //  "template_veofnfx",
+        //   formData,
+        //   "5Czk5Gi-bcnN23oyr"
+        // );
 
-        console.log('EmailJS Result:', emailResult);
+        // console.log('EmailJS Result:', emailResult);
 
         // Send data to Google Sheets
-        const sheetResponse = await fetch('https://script.google.com/macros/s/AKfycbwDCBBEnXM4z7uqsmYub4rbli-b1Rzc33xDbkDh4vO_XH6EsZ5G9jGIEwGCIHh9NGUz/exec', {
+        const sheetResponse = await fetch('https://script.google.com/macros/s/AKfycbw0PkQe8sPEkHIGCqG28zS9DmVP6Lv6pP7h6oStOYiBK59WLgZStiaINcelcysFoBnE/exec', {
           method: 'POST',
-          mode: 'no-cors',
+        
+          cache: 'no-cache',
+          
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify(formData),
+          body: JSON.stringify({
+            name: "John Doe",
+            email: "john.doe@example.com",
+            mobile: "1234567890",
+            message: "Hello, this is a test message.",
+          }),
         });
 
         console.log('Google Sheets Response:', sheetResponse);
