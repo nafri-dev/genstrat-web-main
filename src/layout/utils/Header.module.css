@@ -251,6 +251,9 @@ width: 90%;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
 
+  -webkit-text-fill-color: #848282; /* Ensures color applies */
+  -webkit-font-smoothing: antialiased; /* Enhances font rendering */
+
 }
 .apply_label {
   position: absolute;
@@ -408,7 +411,7 @@ width: 90%;
   border-bottom: 0.8px solid #848282;
   border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
-
+    -webkit-font-smoothing: antialiased; /* Enhances font rendering */
   width: 100% !important;
 }
 
