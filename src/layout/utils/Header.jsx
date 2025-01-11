@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, Fragment, useContext, useState } from "react";
 import logo from "@/assets/logo/Logo2.png";
+
 import headerStyles from "@/layout/utils/Header.module.css";
 import Modal from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
@@ -269,7 +270,7 @@ const Header = () => {
                   onFocus={() => setIsFocused(true)}
                   onBlur={() => setIsFocused(false)}
                   placeholder=""
-                  containerClass={headerStyles.customPhoneInputContainer}
+                  containerClass="custom-phone-input-container"
                   inputClass={headerStyles.customPhoneInput}
                   buttonClass={headerStyles.customPhoneInputButton}
                   dropdownStyle={{
@@ -277,6 +278,8 @@ const Header = () => {
                     overflowY: "auto",
                     WebkitOverflowScrolling: "touch",
                   }}
+                  
+                 
                 />
                 <label
                   className={`${headerStyles.floatingLabel} ${

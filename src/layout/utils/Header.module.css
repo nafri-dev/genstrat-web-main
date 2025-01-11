@@ -68,7 +68,7 @@
 }
 
 .navbar_btn_container button {
-  background:#FFC900;
+  background-color:#FFC900;
   color: #FFF;
   border: none;
   padding: 10px 40px;
@@ -76,7 +76,7 @@
   font-weight: 400;
   cursor: pointer;
   border-radius: 20px;
-  transition: background-image 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.5s ease, color 0.5s ease, border 0.5s ease, box-shadow 0.5s ease;
 }
 
 .navbar_btn_container button:hover {
@@ -375,7 +375,6 @@ width: 90%;
 
 
 
-
 /* PhoneInputStyles */
 
 /* Container */
@@ -390,7 +389,7 @@ width: 90%;
   font-size: 16px;
   color: #848282;
   width: 100%;
-  padding: 10px;
+ padding: 10px;
   border: none !important;
 }
 
@@ -402,7 +401,11 @@ width: 90%;
   border-right: 0.5px solid #848282 !important;
   height: 20px;
   margin-top: 6px;
+  
+
+  
 }
+
 
 
 .form_phone_new_input {
@@ -413,6 +416,7 @@ width: 90%;
     border-bottom-right-radius: 7px;
     -webkit-font-smoothing: antialiased; /* Enhances font rendering */
   width: 100% !important;
+ 
 }
 
 /* .fileInput_input {
