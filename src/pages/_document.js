@@ -25,7 +25,7 @@ export default function Document() {
         />
 
         
-        <link rel="icon" href="/assets/genlablogo.png" />
+        <link rel="icon" href="/assets/favicon.png" />
 
         <meta
           name="description"
