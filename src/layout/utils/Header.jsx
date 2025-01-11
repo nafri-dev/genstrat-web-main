@@ -273,7 +273,7 @@ const Header = () => {
                   inputClass={headerStyles.customPhoneInput}
                   buttonClass={headerStyles.customPhoneInputButton}
                   dropdownStyle={{
-                    maxHeight: "200px",
+                    maxHeight: "148px",
                     overflowY: "auto",
                     WebkitOverflowScrolling: "touch",
                   }}
@@ -305,7 +305,7 @@ const Header = () => {
                   message ? headerStyles.filled : ""
                 }`}
               >
-                Enter your message
+                Write a message
               </label>
               <p
                 className={headerStyles.error}

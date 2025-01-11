@@ -245,6 +245,8 @@ width: 90%;
   padding: 8px 10px;
   outline: none;
   border: none;
+  color: #848282;
+  font-family: 'Comfortaa', cursive;
   border-bottom: 0.8px solid gray;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
@@ -329,7 +331,7 @@ width: 90%;
 }
 .floatingLabel {
   position: absolute;
-  top: 47%; /* Default position */
+  top: 43%; /* Default position */
   left: 80px;
   font-size: 14px;
   transform: translateY(-50%);
@@ -391,10 +393,14 @@ width: 90%;
 
 /* Dropdown button */
 .customPhoneInputButton {
-  background-color: #fff !important;
+  
+  background-color: white !important;
   border: none !important;
-  border-right: 1px solid #848282 !important;
+  border-right: 0.5px solid #c4c0c0 !important;
+  height: 20px;
+  margin-top: 6px;
 }
+
 
 .form_phone_new_input {
   position: relative;
@@ -500,7 +506,7 @@ width: 90%;
   }
 
 .customPhoneInputContainer .country-list {
-  max-height: 200px; /* Adjust the height as needed */
+  height: 200px; /* Adjust the height as needed */
   overflow-y: auto;
   -webkit-overflow-scrolling: touch; /* Ensures smooth scrolling on iOS */
 }
