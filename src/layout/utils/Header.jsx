@@ -94,40 +94,42 @@ const Header = () => {
         mobile,
         message,
       };
-
+  
       try {
         // Send email using EmailJS
         const emailResult = await emailjs.send(
-         "service_twjdkap",
-         "template_veofnfx",
+          process.env.EMAILJS_SERVICE_ID,
+          process.env.EMAILJS_TEMPLATE_ID,
           formData,
-          "5Czk5Gi-bcnN23oyr"
+          process.env.EMAILJS_USER_ID
         );
-
-        console.log('EmailJS Result:', emailResult);
-
+  
+        console.log("EmailJS Result:", emailResult);
+  
         // Send data to Google Sheets
-        const sheetResponse = await fetch('https://script.google.com/macros/s/AKfycbxWq3SUUrDVzfB3vfi-yQXuD83PAyCKrcJQGD5yG9TXO0d55P6KmtxK0SNBoKpax2Zt/exec', {
-          method: 'POST',
-          mode:'no-cors',
-       
-          
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(formData),
-        });
-
-        console.log('Google Sheets Response:', sheetResponse);
-
+        const sheetResponse = await fetch(
+          process.env.GOOGLE_SHEETS_WEBHOOK,
+          {
+            method: "POST",
+            mode: "no-cors",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          }
+        );
+  
+        console.log("Google Sheets Response:", sheetResponse);
+  
         toast.success("Form submitted successfully!");
         closeModal();
       } catch (error) {
-        console.error('Error submitting form:', error);
+        console.error("Error submitting form:", error);
         toast.error("Failed to send the form. Please try again.");
       }
     }
   };
+  
 
   // Reset form fields when closing the modal
   const closeModal = () => {
