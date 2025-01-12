@@ -98,17 +98,17 @@ const Header = () => {
       try {
         // Send email using EmailJS
         const emailResult = await emailjs.send(
-          process.env.EMAILJS_SERVICE_ID,
-          process.env.EMAILJS_TEMPLATE_ID,
+          process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+          process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
           formData,
-          process.env.EMAILJS_USER_ID
+          process.env.NEXT_PUBLIC_EMAILJS_USER_ID
         );
   
         console.log("EmailJS Result:", emailResult);
   
         // Send data to Google Sheets
         const sheetResponse = await fetch(
-          process.env.GOOGLE_SHEETS_WEBHOOK,
+          process.env.NEXT_PUBLIC_GOOGLE_SHEETS_WEBHOOK,
           {
             method: "POST",
             mode: "no-cors",
